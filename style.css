@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+h5{
+    margin: .6rem 0;
+}
+.dark{
+    --background-col :hsl(207, 26%, 17%);
+    --element-col : hsl(209, 23%, 22%);
+    --text-col: hsl(0, 0%, 100%);
+}
+.light{
+    --background-col :hsl(0, 0%, 98%);
+    --element-col : hsl(0, 0%, 100%);
+    --text-col: hsl(200, 15%, 8%);
+    --input-col: hsl(0, 0%, 52%);
+}
+header{
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 4rem;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: var(--element-col);
+    color: var(--text-col);
+
+}
+.header-title{
+    font-size: 1.5rem;
+    
+    font-weight: 800;
+}
+.icon-title{
+    margin-left: .2rem;
+  font-weight: 600;
+}
+
+.search-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    background-color: var(--background-col);
+    color: var(--text-col);   
+
+}
+
+.search{
+    /* width: 20%; */
+    /* height: 10vh; */
+    display: flex;
+    margin-left: 4rem;
+    padding: .8rem .5rem;
+    
+    /* justify-content: space-between; */
+    background-color: var(--element-col);
+    border-radius: 6px;
+    box-shadow: 0 0 10px 1px rgba(26, 24, 24, 0.1);
+    align-items: center;
+
+}
+input{
+    width: 16rem;
+    outline: none;
+    border: none;
+    margin-left: 2rem;
+    color: var(--input-col); 
+    font-weight: 300;
+    
+}
+.filter{
+    margin-right: 2rem;
+}
+.dropdown{
+    width: 200px;
+    margin-right: 4rem;
+    background-color: var(--element-col);
+    color: var(--text-col);
+    box-shadow: 0 0 10px 1px rgba(26, 24, 24, 0.1);
+    border-radius: 6px;
+    position: relative;
+    transition: hover 0.5s linear;
+}
+.dropdown-button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+.dropdown:hover .dropcon{
+ opacity: 1;
+}
+.dropcon{
+    position: absolute;
+    top: 3.4rem;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: var(--element-col);
+    color: var(--text-col);
+    width: 100%;
+    box-shadow: 0 0 10px 1px rgba(26, 24, 24, 0.1);
+    border-radius: 9px;
+    opacity: 0;
+
+
+
+
+}
+.dropcon h6{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 4px;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-col);
+    color: var(--text-col);
+}
+.hero{
+    padding: 0 4rem;
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    grid-gap: 4rem;
+
+}
+.card-content{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+.card-desc{
+    padding: 1rem;
+}
