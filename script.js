@@ -13,10 +13,10 @@ const componentDidMount= async()=> {
                 <img src="${element.flags.svg}" alt="" style="width: 100%; height: 50%;/>
                 
                 <div class="card-desc" style="">
-                    <h5 style="">Germany</h5>
-                    <p>Population:355545</p>
-                    <p>Region:jfgh</p>
-                    <p>capital:fghfg</p>
+                    <h5 style="">${element.name}</h5>
+                    <p>Population:${element.population}</p>
+                    <p>Region:${element.region}</p>
+                    <p>capital:${element.capital}</p>
                 </div>
             </div>
         </div>`
@@ -32,12 +32,12 @@ const componentDidMount= async()=> {
   dark.addEventListener("click",function darkmode() {
       setTimeout(() => {
         
-        if (document.body.classList.contains("light")) {
-          document.body.classlist.remove("light");
-          document.body.classlist.add("dark");
+        if (document.getElementsByTagName("body")[0].classList.contains("light")) {
+          document.getElementsByTagName("body")[0].classlist.remove("light");
+          document.getElementsByTagName("body")[0].classlist.add("dark");
         } else {
-          document.body.classlist.add("light");
-          document.body.classlist.remove("dark");
+          document.getElementsByTagName("body")[0].classlist.add("light");
+          document.getElementsByTagName("body")[0].classlist.remove("dark");
         }
         
       }, 5000);
