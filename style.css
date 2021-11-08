@@ -23,6 +23,7 @@ header{
     width: 100%;
     min-height: 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1.3rem 4rem;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -42,6 +43,7 @@ header{
 
 .search-sec{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding-top: 2rem;
@@ -54,6 +56,7 @@ header{
     /* width: 20%; */
     /* height: 10vh; */
     display: flex;
+    flex-wrap: wrap;
     margin-left: 4rem;
     padding: .8rem .5rem;
     
@@ -93,6 +96,7 @@ input{
     border: none;
     font-size: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
@@ -146,3 +150,17 @@ input{
 .card-desc{
     padding: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .hero{
+       
+        display: grid;
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        grid-gap: 1rem;
+    
+    }
+  }
+  
